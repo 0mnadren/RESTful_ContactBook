@@ -2,7 +2,7 @@
     <div class="row">
         <div class="col">
             <h1 class="mt-4 mb-4">Welcome to RESTful Contact Book</h1>
-            <p>My name is Nemanja, and this is app is built in Django Rest Framework. </p>
+            <p>My name is Nemanja, and this app is built in Django Rest Framework. </p>
             Implementations are:<ul>
                 <li>CRUD is implemented for contacts</li>
                 <li>When contact is deleted, it's status goes to False, and it will not be shown when you list all contacts</li>
