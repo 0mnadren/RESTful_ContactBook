@@ -29,7 +29,8 @@ schema_view = get_schema_view(
       default_version='v1',
       description="Simple Contact Book, in this project I tried to implement JWT Authentication "
                   "and also use Swagger. Swagger is right now only in DEMO state"
-                  " and it can be access only through index page",
+                  " and it can be access only through this /swagger page. Authentication is working, but at the"
+                  " endpoints where you need to provide parameters that don't yet work.",
       terms_of_service="https://www.contactbookapi.com/policies/terms/",
       contact=openapi.Contact(email="nemanja.n.davidovic@gmail.com"),
       license=openapi.License(name="Test License"),
@@ -40,9 +41,10 @@ schema_view = get_schema_view(
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', include('account.urls')),
 
     # SWAGGER URLS
-    path('', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
+    path('swagger/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
     path('redoc/', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),
 
     # REST FRAMEWORK URLS
