@@ -1,5 +1,3 @@
-# RESTful_ContactBook
-This is a Restful app, created in DRF.
 <div class="container">
     <div class="row">
         <div class="col">
