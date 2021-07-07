@@ -2,13 +2,13 @@
     <div class="row">
         <div class="col">
             <h1 class="mt-4 mb-4">Welcome to RESTful Contact Book</h1>
-            <p>My name is Nemanja, and this app is built in Django Rest Framework. </p>
+            <p>My name is Nemanja, and this app is made in Django Rest Framework.</p>
             Implementations are:<ul>
                 <li>CRUD is implemented for contacts</li>
-                <li>When contact is deleted, it's status goes to False, and it will not be shown when you list all contacts</li>
+                <li>When contact is deleted, its status goes to False, and it will not be shown when you list all contacts</li>
                 <li>In endpoint /birthday user should provide Query parameter for filtering data</li>
-                <li>I tried to implement SWAGGER, you can check it <a href="{% url 'schema-swagger-ui' %}">here</a>. For now it is in demo state</li>
-                <li>For authentication I used <strong>JWT Token Authentication</strong></li>
+                <li>I tried to implement SWAGGER, you can check it <a href="{% url 'schema-swagger-ui' %}">here</a>. For now, it is in demo state</li>
+                <li>For authentication, I used <strong>JWT Token Authentication</strong></li>
             </ul>
             <h5>If you interested in my work you can check my <a href="https://nemanjadavidovic.pythonanywhere.com/">portfolio</a>
              or my <a href="https://github.com/0mnadren">GitHub page</a>.</h5>
